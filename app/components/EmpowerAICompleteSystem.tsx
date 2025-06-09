@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useEffect, useReducer, useCallback, useMemo, useRef } from 'react';
 import { Star, Copy, Filter, Clock, DollarSign, Zap, Search, Download, BarChart3, Target, TrendingUp, AlertTriangle, CheckCircle, Loader2, Upload, ArrowUp, ArrowDown, X, Plus, Edit3, Save, RefreshCw, Calendar, Award, Activity, Heart, Brain, Sparkles } from 'lucide-react';
 
