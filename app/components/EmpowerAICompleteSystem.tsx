@@ -89,19 +89,19 @@ const TEMPLATE_CONTENT = Object.freeze({
 
 **OBJECTIVE:** Create a personalized reactivation email for dormant customers that feels individually written.
 
-**CONTEXT:**
+**PARAMETERS:**
 - Customer last engaged: [TIMEFRAME]
 - Previous purchase: [CATEGORY]
 - Business personality: [PERSONALITY]
 
-**REQUIREMENTS:**
+**FRAMEWORK:**
 1. Subject line with 70%+ open rate potential
 2. Pattern-interrupting opening (avoid "I noticed...")
 3. Value-first approach with specific benefit
 4. ONE clear call-to-action with urgency
 5. Maximum 150 words
 
-**QUALITY CHECK:** Ensure personalization feels genuine, predict emotional response, identify conversion probability.`,
+**ADHD ELEMENTS:** Ensure personalization feels genuine, predict emotional response, identify conversion probability.`,
 
   "webinar-structure": `You are a Behavioral Conversion Strategist designing high-conversion webinar experiences.
 
@@ -113,13 +113,13 @@ const TEMPLATE_CONTENT = Object.freeze({
 - Audience sophistication: [LEVEL]
 - Main objection: [OBJECTION]
 
-**STRUCTURE:**
+**FRAMEWORK:**
 1. **Opening (7 min):** Status quo disruption, authority establishment, curiosity loop
 2. **Teaching (30 min):** Strategic revelation sequence, gap expansion, contrast positioning
 3. **Transition:** Seamless offer introduction with solution inevitability
 4. **Offer (20 min):** Value articulation, risk reversal, scarcity integration, decision catalyst
 
-**OPTIMIZATION:** Include ADHD-friendly engagement triggers, attention maintenance, processing supports.`,
+**ADHD ELEMENTS:** Include ADHD-friendly engagement triggers, attention maintenance, processing supports.`,
 
   "social-media-growth": `You are a Platform Algorithm Strategist achieving extraordinary growth through algorithmic alignment.
 
@@ -149,7 +149,7 @@ const TEMPLATE_CONTENT = Object.freeze({
 - Content capacity: [CAPACITY]
 - Current challenges: [CHALLENGES]
 
-**ARCHITECTURE:**
+**FRAMEWORK:**
 1. **Foundation:** Audience mapping, objective integration, territory definition, value exchange
 2. **Development:** Topic ecosystem, format selection, value density, calendar architecture
 3. **Distribution:** Channel selection, publishing cadence, promotion strategy, repurposing
@@ -167,7 +167,7 @@ const TEMPLATE_CONTENT = Object.freeze({
 - Competition level: [DIFFICULTY]
 - Authority goal: [AUTHORITY]
 
-**STRUCTURE:**
+**FRAMEWORK:**
 1. **Introduction (150 words):** Intent alignment, keyword integration, engagement triggers, value proposition
 2. **Core Content:** SERP analysis integration, semantic coverage, information hierarchy, featured snippet targeting
 3. **Authority Elements:** Expertise demonstration, unique insights, credibility signals, trust building
@@ -185,7 +185,7 @@ const TEMPLATE_CONTENT = Object.freeze({
 - Brand positioning: [POSITIONING]
 - Sharing environment: [ENVIRONMENT]
 
-**ARCHITECTURE:**
+**FRAMEWORK:**
 1. **Foundation:** Business alignment, audience psychology, sharing motivation, platform selection
 2. **Content Engineering:** Emotional triggers, practical value, social currency, narrative structure
 3. **Propagation:** Sharing facilitation, social proof, incentive structure, recipient value
@@ -222,7 +222,7 @@ const TEMPLATE_CONTENT = Object.freeze({
 - Platform options: [PLATFORMS]
 - Budget: [BUDGET]
 
-**ARCHITECTURE:**
+**FRAMEWORK:**
 1. **Foundation:** Customer economics, platform selection, audience definition, campaign objectives
 2. **Creative Development:** Message architecture, attention capture, value proposition, format selection
 3. **Campaign Optimization:** Testing architecture, budget allocation, bidding strategy, audience refinement
