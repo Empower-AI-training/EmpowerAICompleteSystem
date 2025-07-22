@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useEffect, useReducer, useCallback, useMemo, useRef } from 'react';
-import { Star, Copy, Filter, Clock, DollarSign, Zap, Search, Download, BarChart3, Target, TrendingUp, AlertTriangle, CheckCircle, Loader2, Upload, ArrowUp, ArrowDown, X, Plus, Edit3, Save, RefreshCw, Calendar, Award, Activity, Heart, Brain, Sparkles } from 'lucide-react';
+import React, { useEffect, useReducer, useCallback, useMemo, useRef } from 'react';
+import { Star, Copy, Clock, DollarSign, Zap, Search, Download, BarChart3, Target, TrendingUp, AlertTriangle, CheckCircle, Loader2, ArrowUp, ArrowDown, X, Edit3, Save, RefreshCw, Activity, Heart, Brain, Sparkles } from 'lucide-react';
 
 // PRODUCTION ERROR BOUNDARY - Zero-dependency recovery
 class ProductionErrorBoundary extends React.Component {
@@ -45,7 +45,7 @@ class ProductionErrorBoundary extends React.Component {
           <div className="text-center">
             <AlertTriangle className="h-12 w-12 mx-auto mb-4 text-red-500" />
             <h1 className="text-xl font-bold text-red-800 mb-2">System Recovery Mode</h1>
-            <p className="text-red-600 mb-4">Don't worry! Your data is safe in memory. Let's get you back on track.</p>
+            <p className="text-red-600 mb-4">Don&apos;t worry! Your data is safe in memory. Let&apos;s get you back on track.</p>
             
             <div className="space-y-3">
               <button 
@@ -1617,9 +1617,6 @@ const EmpowerAICompleteSystem = () => {
       console.error('Copy failed:', err);
       
       // Show manual copy instructions as fallback
-      const content = getTemplateContent(state.selectedTemplate);
-      const fallbackMessage = `Copy failed. Please manually select and copy this template:\n\n${content.substring(0, 200)}...`;
-      
       dispatch({ type: 'SET_ERROR', value: 'Auto-copy failed. Please select and copy the template text manually.' });
       
       // Try to select the content for manual copying
@@ -1742,10 +1739,13 @@ const EmpowerAICompleteSystem = () => {
   }, [state, addQuickWin]);
 
   const clearData = useCallback(() => {
-    const hasData = state.quickWins.length > 0 || state.metrics.totalUsed > 0 || state.goals.revenue.current > 0;
+    const revenueAmount = state.goals.revenue.current;
+    const quickWinsCount = state.quickWins.length;
+    const totalUsed = state.metrics.totalUsed;
+    const hasData = quickWinsCount > 0 || totalUsed > 0 || revenueAmount > 0;
     
     const confirmMessage = hasData 
-      ? `Are you sure you want to clear ALL data?\n\nYou have:\n• ${state.quickWins.length} quick wins\n• $${state.goals.revenue.current.toLocaleString()} in tracked revenue\n• ${state.metrics.totalUsed} template uses\n\nThis will reset everything to starting state.`
+      ? `Are you sure you want to clear ALL data?\n\nYou have:\n• ${quickWinsCount} quick wins\n• $${revenueAmount.toLocaleString()} in tracked revenue\n• ${totalUsed} template uses\n\nThis will reset everything to starting state.`
       : 'Are you sure you want to reset all settings?';
     
     if (window.confirm(confirmMessage)) {
@@ -2015,7 +2015,7 @@ const EmpowerAICompleteSystem = () => {
             {state.activeTab === 'guide' && (
               <section aria-labelledby="guide-heading">
                 <div className="bg-white p-4 md:p-6 rounded-lg shadow-sm">
-                  <h2 id="guide-heading" className="text-xl md:text-2xl font-bold text-purple-800 mb-4 text-center">🧭 What's your most urgent business need?</h2>
+                  <h2 id="guide-heading" className="text-xl md:text-2xl font-bold text-purple-800 mb-4 text-center">🧭 What&apos;s your most urgent business need?</h2>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-8">
                     {[
@@ -2086,7 +2086,7 @@ const EmpowerAICompleteSystem = () => {
                     </h4>
                     <div className="text-sm text-gray-700 space-y-1">
                       <p><strong>1. Pick your urgent need</strong> above to get started immediately</p>
-                      <p><strong>2. Copy the entire template</strong> - don't modify the framework</p>
+                                                      <p><strong>2. Copy the entire template</strong> - don&apos;t modify the framework</p>
                       <p><strong>3. Replace [BRACKETS]</strong> with your specific business information</p>
                       <p><strong>4. Use in ChatGPT-4 or Claude</strong> for best results</p>
                       <p><strong>5. Track your wins</strong> in the Dashboard tab</p>
@@ -2207,7 +2207,7 @@ const EmpowerAICompleteSystem = () => {
                     ).length === 0 && (
                       <div className="text-center py-8 text-gray-500">
                         <Search className="h-8 w-8 mx-auto mb-2 opacity-50" />
-                        <p>No templates found matching "{state.searchTerm}"</p>
+                        <p>No templates found matching &quot;{state.searchTerm}&quot;</p>
                         <button 
                           onClick={() => updateField('searchTerm', '')}
                           className="text-purple-600 text-sm mt-1 hover:underline"
@@ -2894,7 +2894,7 @@ const EmpowerAICompleteSystem = () => {
                       <div className="bg-purple-50 p-4 rounded-lg">
                         <h3 className="font-bold text-purple-800 mb-3 flex items-center">
                           <Target className="h-5 w-5 mr-2" />
-                          Next Month's Goals
+                          Next Month&apos;s Goals
                         </h3>
                         <div className="space-y-2">
                           <input 
